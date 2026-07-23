@@ -1,0 +1,17 @@
+body{
+    margin:0;
+    font-family:Arial;
+    background:#111;
+    color:white;
+}
+
+nav{
+    background-color: black;
+    color: white;
+}
+.marvel{
+    width: 80px;     /* ancho */
+    height: 50px;    /* alto */
+    object-fit: contain;
+
+}
