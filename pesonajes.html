@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personajes - Marvel</title>
+    <!-- CSS de Bootstrap y personalizado -->
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/stiye.css">
+</head>
+<body class="bg-dark text-white">
+  <nav>
+  <ul class="nav justify-content-center bg-black py-2 align-items-center">
+    <li class="nav-item">
+      <a class="nav-link active text-white" aria-current="page" href="acceder.html">ACCEDER</a>
+    </li>
+    <li class="nav-item mx-3">
+       <img src="media/marvel.webp" alt="Marvel" class="marvel" style="height: 35px;">
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="cual_es_tu_personaje.html">CUÁL ES TU PERSONAJE</a>
+    </li>
+  </ul>
+
+  <!-- Menú Secundario -->
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark border-top border-bottom border-danger">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">INICIO</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="pesonajes.html">PERSONAJES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="comic.html">COMIC</a>
+        </li>
+      <li class="nav-item">
+          <a class="nav-link" href="juegos.html">JUEGOS</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+    </nav>
+    <!-- AQUÍ ESTÁ EL CAMBIO IMPORTANTE: agregamos el container y el row -->
+    <main class="container my-5">
+      <h2 class="text-center text-danger text-uppercase fw-bold mb-4">Personajes Destacados</h2>
+      
+      <!-- row-cols hace que las tarjetas se acomoden solas en filas -->
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+        <!-- Iron Man -->
+        <div class="col">
+          <div class="card card-heroe h-100 bg-dark text-white border-secondary shadow">
+            <div class="contenedor-img-heroe">
+              <img src="media/iron_man.webp" class="card-img-top" alt="Iron Man">
+              <span class="badge bg-danger badge-tipo">Héroe</span>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-uppercase fw-bold text-danger">Iron Man</h5>
+              <p class="card-text text-muted small mb-2"><strong>Nombre real:</strong> Tony Stark</p>
+              <p class="card-text flex-grow-1">Genio multimillonario equipado con una armadura de tecnología avanzada.</p>
+              <button class="btn btn-outline-danger mt-3 w-100 fw-bold">Ver Detalles</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Doctor Doom -->
+        <div class="col">
+          <div class="card card-heroe h-100 bg-dark text-white border-secondary shadow">
+            <div class="contenedor-img-heroe">
+              <img src="media/Doctor_Doom.webp" class="card-img-top" alt="Doctor Doom">
+              <span class="badge bg-warning text-dark badge-tipo">Villano</span>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-uppercase fw-bold text-danger">Doctor Doom</h5>
+              <p class="card-text text-muted small mb-2"><strong>Nombre real:</strong> Victor von Doom</p>
+              <p class="card-text flex-grow-1">Gobernante de Latveria, maestro en hechicería y genio científico.</p>
+              <button class="btn btn-outline-danger mt-3 w-100 fw-bold">Ver Detalles</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scarlet Witch -->
+        <div class="col">
+          <div class="card card-heroe h-100 bg-dark text-white border-secondary shadow">
+            <div class="contenedor-img-heroe">
+              <img src="media/Scarlet_Witch.webp" class="card-img-top" alt="Scarlet Witch">
+              <span class="badge bg-danger badge-tipo">Héroe</span>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-uppercase fw-bold text-danger">Scarlet Witch</h5>
+              <p class="card-text text-muted small mb-2"><strong>Nombre real:</strong> Wanda Maximoff</p>
+              <p class="card-text flex-grow-1">Poseedora de la magia del caos capaz de alterar la realidad misma.</p>
+              <button class="btn btn-outline-danger mt-3 w-100 fw-bold">Ver Detalles</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Doctor Strange -->
+        <div class="col">
+          <div class="card card-heroe h-100 bg-dark text-white border-secondary shadow">
+            <div class="contenedor-img-heroe">
+              <img src="media/Doctor_Strange.webp" class="card-img-top" alt="Doctor Strange">
+              <span class="badge bg-danger badge-tipo">Héroe</span>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-uppercase fw-bold text-danger">Doctor Strange</h5>
+              <p class="card-text text-muted small mb-2"><strong>Nombre real:</strong> Stephen Strange</p>
+              <p class="card-text flex-grow-1">Hechicero Supremo y guardián de las artes místicas en el multiverso.</p>
+              <button class="btn btn-outline-danger mt-3 w-100 fw-bold">Ver Detalles</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Venom -->
+        <div class="col">
+          <div class="card card-heroe h-100 bg-dark text-white border-secondary shadow">
+            <div class="contenedor-img-heroe">
+              <img src="media/venom.webp" class="card-img-top" alt="Venom">
+              <span class="badge bg-secondary badge-tipo">Antihéroe</span>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-uppercase fw-bold text-danger">Venom</h5>
+              <p class="card-text text-muted small mb-2"><strong>Nombre real:</strong> Eddie Brock / Simbionte</p>
+              <p class="card-text flex-grow-1">Simbionte alienígena que otorga fuerza descomunal y habilidades arácnidas.</p>
+              <button class="btn btn-outline-danger mt-3 w-100 fw-bold">Ver Detalles</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Señor Fantástico -->
+        <div class="col">
+          <div class="card card-heroe h-100 bg-dark text-white border-secondary shadow">
+            <div class="contenedor-img-heroe">
+              <img src="media/señor_fantastico.webp" class="card-img-top" alt="Señor Fantástico">
+              <span class="badge bg-danger badge-tipo">Héroe</span>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-uppercase fw-bold text-danger">Sr. Fantástico</h5>
+              <p class="card-text text-muted small mb-2"><strong>Nombre real:</strong> Reed Richards</p>
+              <p class="card-text flex-grow-1">Líder de Los 4 Fantásticos con intelecto de nivel genio y cuerpo elástico.</p>
+              <button class="btn btn-outline-danger mt-3 w-100 fw-bold">Ver Detalles</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thanos -->
+        <div class="col">
+          <div class="card card-heroe h-100 bg-dark text-white border-secondary shadow">
+            <div class="contenedor-img-heroe">
+              <img src="media/Thanos.webp" class="card-img-top" alt="Thanos">
+              <span class="badge bg-warning text-dark badge-tipo">Villano</span>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-uppercase fw-bold text-danger">Thanos</h5>
+              <p class="card-text text-muted small mb-2"><strong>Nombre real:</strong> Thanos</p>
+              <p class="card-text flex-grow-1">El Titán Loco, poseedor de una fuerza colosal y portador del Guantelete.</p>
+              <button class="btn btn-outline-danger mt-3 w-100 fw-bold">Ver Detalles</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Loki -->
+        <div class="col">
+          <div class="card card-heroe h-100 bg-dark text-white border-secondary shadow">
+            <div class="contenedor-img-heroe">
+              <img src="media/Loki.webp" class="card-img-top" alt="Loki">
+              <span class="badge bg-secondary badge-tipo">Antihéroe</span>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-uppercase fw-bold text-danger">Loki</h5>
+              <p class="card-text text-muted small mb-2"><strong>Nombre real:</strong> Loki Laufeyson</p>
+              <p class="card-text flex-grow-1">Dios de las mentiras y el engaño, maestro de la ilusión y la magia.</p>
+              <button class="btn btn-outline-danger mt-3 w-100 fw-bold">Ver Detalles</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+<audio id="musicaFondo" loop>
+  <source src="media/cancion_de_fondo.mp3" type="audio/mpeg">
+</audio>
+<button type="button" id="btnMusica" class="burbuja-musica" onclick="toggleMusica()" title="Reproducir / Pausar Música">
+off</button>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/js.js"></script>
+</body>
+</html>

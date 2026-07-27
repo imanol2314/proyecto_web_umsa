@@ -2,16 +2,73 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <!-- Importante: Esta etiqueta viewport es obligatoria para que el celular reconozca el tamaño real de pantalla -->
+  <!-- Etiqueta viewport obligatoria para diseño responsivo -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ACCEDER</title>
+  <title>ACCEDER - Marvel</title>
+  <link rel="stylesheet" href="css/root.css">
+  <link rel="stylesheet" href="css/stiye.css">
   <link rel="stylesheet" href="css/stiye2.css">
+  <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
 </head>
-<body>
+<body class="bg-dark text-white">
+    <main class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+          <div class="tarjeta-marvel p-4 shadow-lg bg-black rounded border border-secondary">
+            
+            <!-- Botones tipo Pestaña -->
+            <div class="d-flex mb-4">
+              <button type="button" class="pestana-btn activa w-50 py-2" id="btnTabLogin" onclick="mostrarLogin()">Iniciar Sesión</button>
+              <button type="button" class="pestana-btn w-50 py-2" id="btnTabRegistro" onclick="mostrarRegistro()">Registrarse</button>
+            </div>
+            <form id="formLogin">
+              <h3 class="titulo-marvel text-center text-uppercase mb-3 text-white">Ingresar</h3>
+              <div class="mb-3">
+                <label for="loginUsuario" class="form-label text-white">Usuario o Correo:</label>
+                <input type="text" class="form-control bg-dark text-white border-secondary" id="loginUsuario" placeholder="Ej: spiderman123">
+              </div>
+              <div class="mb-3">
+                <label for="loginPassword" class="form-label text-white">Contraseña:</label>
+                <input type="password" class="form-control bg-dark text-white border-secondary" id="loginPassword" placeholder="******">
+              </div>
+              <button type="button" class="btn boton-marvel w-100 py-2 mt-3 fw-bold" onclick="validarLogin()">INGRESAR</button>
+            </form>
+            <form id="formRegistro" style="display: none;">
+              <h3 class="titulo-marvel text-center text-uppercase mb-3 text-white">Nuevo Registro</h3>
+              <div class="mb-3">
+                <label for="regNombre" class="form-label text-white">Nombre Completo:</label>
+                <input type="text" class="form-control bg-dark text-white border-secondary" id="regNombre" placeholder="Ej: Peter Parker">
+              </div>
+              <div class="mb-3">
+                <label for="regUsuario" class="form-label text-white">Nombre de Usuario:</label>
+                <input type="text" class="form-control bg-dark text-white border-secondary" id="regUsuario" placeholder="Ej: spiderman123">
+              </div>
+              <div class="mb-3">
+                <label for="regCorreo" class="form-label text-white">Correo Electrónico:</label>
+                <input type="email" class="form-control bg-dark text-white border-secondary" id="regCorreo" placeholder="correo@ejemplo.com">
+              </div>
+              <div class="mb-3">
+                <label for="regPassword" class="form-label text-white">Contraseña:</label>
+                <input type="password" class="form-control bg-dark text-white border-secondary" id="regPassword" placeholder="******">
+              </div>
+              <button type="button" class="btn boton-marvel w-100 py-2 mt-3 fw-bold" onclick="validarRegistro()">CREAR CUENTA</button>
+            </form>
+            <div id="mensajeAlerta" class="alert alert-danger mt-3 text-center" style="display: none;"></div>
+            <div class="text-center mt-4 border-top border-secondary pt-3">
+              <a href="index.html" class="text-white-50 text-decoration-none small">← Volver a la página principal</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <audio id="musicaFondo" loop>
+  <source src="media/cancion_de_fondo.mp3" type="audio/mpeg">
+</audio>
 
-  <div class="dir">
-    <h1>¡Hola, mundo!</h1>
-  </div>
-
+<!-- Burbujita Flotante de Música -->
+<button type="button" id="btnMusica" class="burbuja-musica" onclick="toggleMusica()" title="Reproducir / Pausar Música">
+off</button>
+  <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/logo.js"></script>
 </body>
 </html>

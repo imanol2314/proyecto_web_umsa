@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUAL ES TU PERSONAJE</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/stiye2.css">
+</head>
+<body>
+    <section class="container my-5 text-center">
+  <h2 class="titulo-seccion mb-4">¿Qué Personaje de Marvel Eres?</h2>
+  <p class="lead text-light mb-4">Responde estas 5 preguntas y descubre a qué héroe o villano te pareces más.</p>
+
+  <div class="row justify-content-center">
+    <div class="col-md-8 col-lg-7">
+      <div class="card bg-dark text-white border-danger p-4 shadow-lg">
+        
+        <form id="quizForm">
+          
+          <!-- Pregunta 1 -->
+          <div class="mb-4 text-start" id="pregunta1">
+            <label class="form-label fw-bold text-danger">1. ¿Cómo reaccionas cuando enfrentas un gran problema?</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="p1" value="capitan" id="p1_a" required>
+              <label class="form-check-label" for="p1_a">Doy el frente con valor y mantengo unido al grupo.</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="p1" value="thor" id="p1_b">
+              <label class="form-check-label" for="p1_b">Lo mezo con todo mi poder sin dudar un segundo.</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="p1" value="ironman" id="p1_c">
+              <label class="form-check-label" for="p1_c">Invento una solución tecnológica o estratégica rápida.</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="p1" value="spiderman" id="p1_d">
+              <label class="form-check-label" for="p1_d">Uso mi agilidad, mi humor y hago lo correcto.</label>
+            </div>
+          </div>
+
+          <!-- Pregunta 2 -->
+          <div class="mb-4 text-start" id="pregunta2">
+            <label class="form-label fw-bold text-danger">2. ¿Cuál consideras que es tu mayor virtud?</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="p2" value="capitan" id="p2_a" required>
+              <label class="form-check-label" for="p2_a">Mi integridad, sentido de la justicia y lealtad.</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="p2" value="captain_marvel" id="p2_b">
+              <label class="form-check-label" for="p2_b">Mi independencia y seguridad en mis capacidades.</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="p2" value="thor" id="p2_c">
+              <label class="form-check-label" for="p2_c">Mi nobleza, fuerza y espíritu protector.</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="p2" value="loki" id="p2_d">
+              <label class="form-check-label" for="p2_d">Mi astucia para salir de cualquier apuro.</label>
+            </div>
+          </div>
+
+          <!-- Pregunta 3 -->
+          <div class="mb-4 text-start" id="pregunta3">
+            <label class="form-label fw-bold text-danger">3. En un equipo de trabajo, ¿cuál es tu rol natural?</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="p3" value="capitan" id="p3_a" required>
+              <label class="form-check-label" for="p3_a">El líder inspirador que motiva a todos.</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="p3" value="fantastico" id="p3_b">
+              <label class="form-check-label" for="p3_b">El cerebro técnico que analiza cada posibilidad.</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="p3" value="doom" id="p3_c">
+              <label class="form-check-label" for="p3_c">El estratega firme que toma el mando absoluto.</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="p3" value="captain_marvel" id="p3_d">
+              <label class="form-check-label" for="p3_d">La fuerza de vanguardia que rompe cualquier obstáculo.</label>
+            </div>
+          </div>
+
+          <!-- Pregunta 4 -->
+          <div class="mb-4 text-start" id="pregunta4">
+            <label class="form-label fw-bold text-danger">4. ¿Qué estilo o poder prefieres?</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="p4" value="thor" id="p4_a" required>
+              <label class="form-check-label" for="p4_a">Poder celestial, truenos y fuerza legendaria.</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="p4" value="wanda" id="p4_b">
+              <label class="form-check-label" for="p4_b">Magia mística o control sobre la realidad.</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="p4" value="captain_marvel" id="p4_c">
+              <label class="form-check-label" for="p4_c">Energía cósmica e invulnerabilidad.</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="p4" value="ironman" id="p4_d">
+              <label class="form-check-label" for="p4_d">Una armadura de alta tecnología con armas avanzadas.</label>
+            </div>
+          </div>
+
+          <!-- Pregunta 5 -->
+          <div class="mb-4 text-start" id="pregunta5">
+            <label class="form-label fw-bold text-danger">5. ¿Cuál es tu frase preferida?</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="p5" value="capitan" id="p5_a" required>
+              <label class="form-check-label" for="p5_a">"Podría hacer esto todo el día."</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="p5" value="spiderman" id="p5_b">
+              <label class="form-check-label" for="p5_b">"Un gran poder conlleva una gran responsabilidad."</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="p5" value="thanos" id="p5_c">
+              <label class="form-check-label" for="p5_c">"Las decisiones difíciles requieren las voluntades más fuertes."</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="p5" value="thor" id="p5_d">
+              <label class="form-check-label" for="p5_d">"¡Por Asgard y por la victoria!"</label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-danger btn-lg w-100 fw-bold">Descubrir mi personaje</button>
+        </form>
+
+        <!-- Tarjeta de Resultado -->
+        <div id="resultadoQuiz" class="d-none mt-4 p-3 border border-danger rounded bg-black">
+          <h3 class="text-uppercase fw-bold text-danger mb-3" id="nombreResultado"></h3>
+          <div class="contenedor-img-heroe mb-3" style="height: 220px;">
+            <img id="imagenResultado" src="" alt="Resultado" class="img-fluid rounded" style="height: 100%; object-fit: cover;">
+          </div>
+          <p id="descripcionResultado" class="text-light mb-3"></p>
+          <button id="btnReintentar" class="btn btn-outline-danger">Volver a intentar</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<audio id="musicaFondo" loop>
+  <source src="media/cancion_de_fondo.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Burbujita Flotante de Música -->
+<button type="button" id="btnMusica" class="burbuja-musica" onclick="toggleMusica()" title="Reproducir / Pausar Música">
+off</button>
+    <script src="js/js.js"></script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

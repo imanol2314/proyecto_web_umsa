@@ -1,0 +1,49 @@
+:root {
+  --color-principal: #e62429;  /* Rojo de Marvel */
+  --color-oscuro: #151515;     /* Fondo de contenedores */
+  --color-fondo: #0a0a0a;      /* Fondo principal */
+  --color-texto: #ffffff;      /* Texto blanco */
+  --color-gris: #222222;
+}
+
+body {
+  background-color: var(--color-fondo) !important;
+  color: var(--color-texto);
+}
+
+.tarjeta-marvel {
+  background-color: var(--color-oscuro);
+  border: 2px solid var(--color-principal);
+  border-radius: 8px;
+}
+
+.titulo-marvel {
+  color: var(--color-principal);
+  font-weight: bold;
+}
+
+.boton-marvel {
+  background-color: var(--color-principal);
+  color: var(--color-texto);
+  border: none;
+  font-weight: bold;
+}
+
+.boton-marvel:hover {
+  background-color: #b31015;
+  color: var(--color-texto);
+}
+
+/* Pestañas para alternar entre Login y Registro */
+.pestana-btn {
+  background-color: var(--color-gris);
+  color: white;
+  border: 1px solid var(--color-principal);
+  width: 50%;
+  padding: 8px;
+  font-weight: bold;
+}
+
+.pestana-btn.activa {
+  background-color: var(--color-principal);
+}

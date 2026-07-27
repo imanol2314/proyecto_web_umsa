@@ -1,7 +1,7 @@
 body{
     margin:0;
     font-family:Arial;
-    background:#111;
+    background:#111111;
     color:white;
 }
 
@@ -10,8 +10,165 @@ nav{
     color: white;
 }
 .marvel{
-    width: 80px;     /* ancho */
-    height: 50px;    /* alto */
+    width: 80px;     
+    height: 50px;  
     object-fit: contain;
 
+}
+.carousel-item {
+  height: 450px; 
+  background-color: #000;
+}
+.carousel-item img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  object-position: center;
+  margin: 0 auto; 
+  display: block;
+}
+
+/* Encabezados de sección */
+.titulo-seccion {
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  border-bottom: 3px solid #e62429; /* Rojo característico de Marvel */
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* --- 1. Tarjetas de Categorías --- */
+.tarjeta-marvel {
+  background-color: #1f1f1f;
+  border: 1px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto Hover: Eleva la tarjeta y le da un resplandor rojo */
+.tarjeta-marvel:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(230, 36, 41, 0.4);
+  border-color: #e62429;
+}
+
+.tarjeta-marvel img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.tarjeta-marvel .card-title {
+  color: #e62429;
+  font-weight: bold;
+}
+.btn-marvel {
+  background-color: transparent;
+  color: #e62429;
+  border: 2px solid #e62429;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.btn-marvel:hover {
+  background-color: #e62429;
+  color: #ffffff;
+}
+.seccion-destacado {
+  background: linear-gradient(135deg, #181818 0%, #000000 100%);
+  border-top: 2px solid #e62429;
+  border-bottom: 2px solid #e62429;
+  padding: 50px 0;
+}
+
+.imagen-destacada {
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(230, 36, 41, 0.3);
+  max-height: 350px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.badge-marvel {
+  background-color: #e62429;
+  color: #fff;
+  padding: 5px 12px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+.tabla-marvel {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.tabla-marvel thead {
+  background-color: #e62429;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.tabla-marvel th, 
+.tabla-marvel td {
+  border-color: #333;
+  padding: 15px;
+}
+
+.tabla-marvel tbody tr:hover {
+  background-color: #282828;
+}
+.footer-marvel {
+  background-color: #080808;
+  border-top: 1px solid #222;
+  padding: 30px 0;
+}
+
+.footer-marvel a {
+  color: #aaa;
+  transition: color 0.2s ease;
+}
+.footer-marvel a:hover {
+  color: #e62429;
+}
+.contenedor-img-heroe {
+    position: relative;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor-img-heroe img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+}
+.burbuja-musica {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #e62429; 
+  color: white;
+  border: 2px solid white;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.burbuja-musica:hover {
+  transform: scale(1.1);
 }

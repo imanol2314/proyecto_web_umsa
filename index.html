@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
 </head>
 <body>
+   <body>
     <nav>
         <ul class="nav justify-content-center">
   <li class="nav-item">
@@ -18,28 +19,145 @@
      <img src="media/marvel.png" alt="" class="marvel">
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link" href="cual_es_tu_personaje.html">CUAL ES TU PERSONAJE</a>
   </li>
   <li class="nav-item">
     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
   </li>
 </ul>
-<ul class="nav nav-tabs">
-  <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Active</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="pagina2.html">historietas</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-  </li>
-</ul>
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark border-top border-bottom border-danger">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">INICIO</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="pesonajes.html">PERSONAJES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="comic.html">COMIC</a>
+        </li>
+      <li class="nav-item">
+          <a class="nav-link" href="juegos.html">JUEGOS</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
     </nav>
+<section>
+  <div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="media/logo1.avif" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>SPIDER-MAN: UN NUEVO DÍA</h5>
+        <p>Tras los acontecimientos de 'No Way Home', Peter Parker inicia un nuevo capítulo completamente desde cero. Sin tecnología Stark y olvidado por el mundo, el trepamuros regresa a sus raíces callejeras en Nueva York para luchar contra el crimen mientras intenta reconstruir su vida personal.
 
-    <script href="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+Protagonista: Tom Holland</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="media/logo2.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>AVENGERS: DOOMSDAY</h5>
+        <p>Los Héroes más Poderosos de la Tierra se enfrentan a su amenaza más letal hasta la fecha con el regreso de Robert Downey Jr. al Universo Cinematográfico de Marvel, encarnando al implacable Victor von Doom (Doctor Doom) en una batalla multiversal que cambiará el destino del cosmos.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="media/logo3.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>GHOST RIDER</h5>
+        <p>Para salvar a su ser querido, el acróbata de motocicletas Johnny Blaze vende su alma a Mephisto y se convierte en el Espíritu de la Venganza. Atado a un demonio y armado con su cadena mística y su motocicleta llameante, caza a los pecadores e imparte justicia sobrenatural con la Mirada de la Penitencia.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>  
+</section>
+<section class="seccion-destacado my-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center mb-4 mb-md-0">
+        <img src="media/logo2.jpg" alt="Doctor Doom" class="imagen-destacada">
+      </div>
+      <div class="col-md-6">
+        <span class="badge-marvel mb-2 d-inline-block">Personaje Destacado</span>
+        <h2 class="display-5 fw-bold text-uppercase mt-2">Doctor Doom</h2>
+        <p class="lead text-light">Victor von Doom es uno de los científicos y hechiceros más brillantes y peligrosos del Multiverso. Gobernante de Latveria y enemigo supremo de Los 4 Fantásticos.</p>
+        <a href="https://youtu.be/eJUdJoySLII?si=EuONK1-SL3Rdpx2W" class="btn btn-marvel mt-2">Saber más sobre él</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container my-5 text-center">
+  <h2 class="titulo-seccion mb-4">Próximos Estrenos del MCU</h2>
+  <div class="table-responsive">
+    <table class="table table-dark tabla-marvel align-middle">
+      <thead>
+        <tr>
+          <th>Título</th>
+          <th>Tipo</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fw-bold">Avengers: Doomsday</td>
+          <td>Película</td>
+          <td><span class="badge bg-warning text-dark">En Producción</span></td>
+        </tr>
+        <tr>
+          <td class="fw-bold">Spider-Man: Brand New Day</td>
+          <td>Película</td>
+          <td><span class="badge bg-info">Anunciada</span></td>
+        </tr>
+        <tr>
+          <td class="fw-bold">Ghost Rider</td>
+          <td>Película / Serie</td>
+          <td><span class="badge bg-secondary">En Desarrollo</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<footer class="footer-marvel text-center text-md-start">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-3 mb-md-0">
+        <h5 class="text-danger fw-bold mb-1">MARVEL FAN PAGE</h5>
+        <p class="small text-muted mb-0">Sitio web creado para fans. Marvel y sus personajes son propiedad de Marvel Entertainment & Disney.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Audio oculto -->
+<audio id="musicaFondo" loop>
+  <source src="media/cancion_de_fondo.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Burbujita Flotante de Música -->
+<button type="button" id="btnMusica" class="burbuja-musica" onclick="toggleMusica()" title="Reproducir / Pausar Música">
+musica</button>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="js/js.js"></script>
 </body>
 </html>
