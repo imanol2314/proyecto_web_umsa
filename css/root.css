@@ -1,8 +1,8 @@
 :root {
-  --color-principal: #e62429;  /* Rojo de Marvel */
-  --color-oscuro: #151515;     /* Fondo de contenedores */
-  --color-fondo: #0a0a0a;      /* Fondo principal */
-  --color-texto: #ffffff;      /* Texto blanco */
+  --color-principal: #e62429; 
+  --color-oscuro: #151515;    
+  --color-fondo: #0a0a0a;      
+  --color-texto: #ffffff; 
   --color-gris: #222222;
 }
 
